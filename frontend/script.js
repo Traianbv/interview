@@ -2,9 +2,19 @@ let currentIndex = 0;
 let totalQuestions = 0;
 let currentLevel = null;
 
+// Mapping pentru titluri dinamice
+const interviewTitles = {
+  SOC1: 'SOC Analyst',
+  SOC2: 'SOC Analyst Avansat',
+  NETADMIN: 'Network Administrator',
+  SOFTWAREDEV: 'Software Developer'
+};
+
 async function startInterview(level) {
   currentLevel = level;
   currentIndex = 0;
+  // Actualizare titlu dinamic
+  document.getElementById("interview-title").textContent = `Simulare Interviu ${interviewTitles[level] || ''}`;
   
   // Ascunde selecția nivelului și afișează interviul
   document.getElementById("level-selection").style.display = "none";
@@ -183,5 +193,21 @@ async function resetInterview() {
       console.error("Error resetting interview:", error);
       alert("A apărut o eroare la resetarea interviului. Te rog să încerci din nou.");
     }
+  }
+}
+
+// Funcție pentru ieșirea din interviu și revenirea la pagina principală
+async function exitInterview() {
+  if (confirm("Sigur dorești să ieși și să te întorci la pagina principală? Progresul va fi pierdut.")) {
+    try {
+      await fetch("/reset", { method: "POST" });
+    } catch (error) {
+      console.error("Error resetting session:", error);
+    }
+    // Resetăm UI și titlu
+    document.getElementById("qa-box").style.display = "none";
+    document.getElementById("final-evaluation").style.display = "none";
+    document.getElementById("level-selection").style.display = "block";
+    document.getElementById("interview-title").textContent = "Simulare Interviu";
   }
 }

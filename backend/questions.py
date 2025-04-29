@@ -192,5 +192,60 @@ questions = [
         "level": "NETADMIN",
         "keywords": ["QoS", "VoIP", "prioritizare", "coșuri", "bandwidth"],
         "answer": "Configurez QoS prin clasificare (marking) a pachetelor VoIP, alocare de cozi prioritare și limitări de bandwidth pentru traficul non-prioritar pentru a asigura calitatea apelurilor."
+    },
+    # Întrebări SOFTWAREDEV
+    {
+        "question": "Explică diferența dintre o listă și un tuple în Python?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["list", "tuple", "mutable", "immutable"],
+        "answer": "O listă este mutable (poate fi modificată după creare), în timp ce un tuple este imutabil (nu poate fi modificat). Tuple-urile sunt mai rapide și pot fi folosite ca chei în dict."
+    },
+    {
+        "question": "Ce este programarea orientată pe obiecte (OOP) și care sunt cele patru principii de bază?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["OOP", "encapsulation", "inheritance", "polymorphism", "abstraction"],
+        "answer": "OOP este un stil de programare bazat pe obiecte. Principiile de bază sunt: encapsularea, moștenirea, polimorfismul și abstractizarea."
+    },
+    {
+        "question": "Ce este un RESTful API și care sunt principiile sale?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["REST", "API", "stateless", "endpoint", "CRUD"],
+        "answer": "Un RESTful API respectă principiul stateless, folosește URL-uri pentru resurse și metode HTTP (GET, POST, PUT, DELETE) pentru operații CRUD."
+    },
+    {
+        "question": "Cum funcționează tranzacțiile în bazele de date relaționale?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["transaction", "ACID", "commit", "rollback"],
+        "answer": "Tranzacțiile garantează proprietățile ACID: atomicitate, consistență, izolare și durabilitate. Se folosește COMMIT pentru salvare și ROLLBACK pentru anulare."
+    },
+    {
+        "question": "Ce este un deadlock și cum îl previi?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["deadlock", "lock", "concurrency", "prevention"],
+        "answer": "Un deadlock apare când două sau mai multe procese se blochează reciproc așteptând resurse. Se previne prin strategie de evitare a cererilor circulare sau folosind timeout-uri."
+    },
+    {
+        "question": "Explică modelul MVC?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["MVC", "model", "view", "controller"],
+        "answer": "Model-View-Controller separă datele (model), interfața (view) și logica (controller) pentru a îmbunătăți structura și mentenabilitatea aplicațiilor."
+    },
+    {
+        "question": "Ce este garbage collection și cum funcționează în limbaje precum Python sau Java?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["garbage collector", "memory management", "reference counting", "heap"],
+        "answer": "Garbage collection eliberează memoria neutilizată automat. Python folosește reference counting și cycle detector, Java folosește mark-and-sweep și generational GC."
+    },
+    {
+        "question": "Ce sunt design patterns și menționează trei exemple comune?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["design patterns", "singleton", "factory", "observer"],
+        "answer": "Design patterns sunt soluții reutilizabile la probleme recurente de design. Exemple: Singleton, Factory, Observer."
+    },
+    {
+        "question": "Cum optimizezi performanța unei aplicații web?",
+        "level": "SOFTWAREDEV",
+        "keywords": ["caching", "load balancing", "CDN", "profiling"],
+        "answer": "Optimizarea include caching la nivel de client și server, folosirea CDN, echilibrarea încărcării și profiling-ul codului pentru identificarea blocajelor."
     }
 ]  

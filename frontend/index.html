@@ -32,6 +32,13 @@
     #netadmin-btn {
       background-color: #FF9800;
     }
+    #softdev-btn {
+      background-color: #9C27B0;
+    }
+    #exit-btn {
+      background-color: #9E9E9E;
+      color: white;
+    }
     #qa-box {
       background-color: #f5f5f5;
       padding: 20px;
@@ -110,7 +117,7 @@
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;">Simulare Interviu SOC Analyst</h1>
+  <h1 id="interview-title" style="text-align: center;">Simulare Interviu</h1>
   
   <div id="level-selection">
     <h2>Alege nivelul de interviu</h2>
@@ -118,10 +125,12 @@
       <p><strong>SOC1:</strong> Întrebări de bază despre conceptele fundamentale ale SOC-ului, investigarea alertelor și procesele de bază.</p>
       <p><strong>SOC2:</strong> Întrebări avansate despre investigarea incidentelor, folosirea MITRE ATT&CK și gestionarea situațiilor complexe.</p>
       <p><strong>NETADMIN:</strong> Întrebări de bază despre administrarea rețelelor, configurarea dispozitivelor de rețea, securitate și depanare.</p>
+      <p><strong>SOFTWAREDEV:</strong> Întrebări despre dezvoltare software: algoritmi, structuri de date, OOP, baze de date și bune practici.</p>
     </div>
     <button id="soc1-btn" class="level-button" onclick="startInterview('SOC1')">Începe SOC1</button>
     <button id="soc2-btn" class="level-button" onclick="startInterview('SOC2')">Începe SOC2</button>
     <button id="netadmin-btn" class="level-button" onclick="startInterview('NETADMIN')">Începe NETADMIN</button>
+    <button id="softdev-btn" class="level-button" onclick="startInterview('SOFTWAREDEV')">Începe Software Developer</button>
   </div>
 
   <div id="qa-box">
@@ -131,6 +140,7 @@
     <div class="button-container">
       <button id="submit-btn" onclick="submitAnswer()">Trimite răspuns</button>
       <button id="next-btn" onclick="loadNextQuestion()">Următoarea întrebare</button>
+      <button id="exit-btn" onclick="exitInterview()">Ieșire</button>
       <button id="reset-btn" onclick="resetInterview()">Resetează interviul</button>
     </div>
     <div id="feedback"></div>
