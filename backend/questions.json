@@ -1,0 +1,38 @@
+[
+  {
+    "level": "SOC1",
+    "question": "Cum investighezi o alertă de tip 'Brute Force' pe un server?",
+    "keywords": ["loguri", "ip", "autentificare", "timp", "număr de încercări"],
+    "answer": "Analizez logurile de autentificare, identific IP-urile suspecte cu multe încercări eșuate într-un interval scurt de timp și verific dacă autentificările au fost reușite ulterior."
+  },
+  {
+    "level": "SOC1",
+    "question": "Care sunt pașii inițiali într-o investigație de phishing?",
+    "keywords": ["email", "header", "link", "analiză", "utilizator"],
+    "answer": "Verific emailul suspect, analizez header-ul, inspectez linkurile și atașamentele, și discut cu utilizatorul vizat pentru confirmare."
+  },
+  {
+    "level": "SOC1",
+    "question": "Ce înseamnă trierea alertelor într-un SOC?",
+    "keywords": ["prioritizare", "fals pozitiv", "răspuns", "analiză", "gravitate"],
+    "answer": "Trierea presupune evaluarea alertelor primite, identificarea falselor pozitive și prioritizarea celor reale pentru răspuns rapid."
+  },
+  {
+    "level": "SOC2",
+    "question": "Cum diferențiezi un incident real de un fals pozitiv într-un SIEM?",
+    "keywords": ["context", "corelare", "intel", "indicatori", "analiză"],
+    "answer": "Prin corelarea alertelor cu alte surse de date, folosirea inteligenței despre amenințări și verificarea contextului rețelei și sistemului afectat."
+  },
+  {
+    "level": "SOC2",
+    "question": "Cum folosești MITRE ATT&CK într-o investigație?",
+    "keywords": ["tactică", "tehnică", "corelare", "identificare", "măsuri"],
+    "answer": "Mapez activitatea atacatorului la tehnicile din MITRE ATT&CK, pentru a înțelege fazele atacului și a lua contramăsuri."
+  },
+  {
+    "level": "SOC2",
+    "question": "Ce faci dacă observi trafic exfiltrare de date criptat către o țară suspectă?",
+    "keywords": ["trafic", "criptat", "geolocație", "firewall", "containment"],
+    "answer": "Izolez sistemul afectat, analizez pachetele suspecte, identific aplicația responsabilă și raportez incidentul pentru acțiune."
+  }
+]
