@@ -1,1 +1,1 @@
-Simulari de interviuri in Python 
+Simulate the interview on Python 
